@@ -71,3 +71,7 @@ body.popup-open{overflow:hidden}
 .nav .brand img{display:block;width:auto;height:80px;object-fit:contain}
 @media(max-width:560px){.nav .brand{width:82px;height:68px;padding:4px 5px}.nav .brand img{height:60px}}
 
+/* Mantém o PNG oficial transparente, sem cartão branco ao redor da marca. */
+.nav .brand{padding:0;background:transparent;border-radius:0}
+@media(max-width:560px){.nav .brand{padding:0}}
+
