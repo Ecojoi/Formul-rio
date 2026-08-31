@@ -140,7 +140,7 @@
     window.setTimeout(() => {
       popup.hidden = false; popup.classList.add('is-visible');
       sessionStorage.setItem('ecojoi_whatsapp_popup_seen', '1'); ga('whatsapp_popup_view');
-    }, 5500);
+    }, 900);
   }
 
   document.getElementById('year').textContent = new Date().getFullYear();
