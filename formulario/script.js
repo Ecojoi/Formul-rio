@@ -129,19 +129,24 @@
   });
 
   const popup = document.getElementById('whatsapp_popup');
+  const backdrop = document.getElementById('whatsapp_backdrop');
   const popupLink = popup.querySelector('a');
-  popup.querySelector('.popup-close').addEventListener('click', () => { popup.hidden = true; });
+  const closePopup = () => {
+    popup.hidden = true; backdrop.hidden = true; document.body.classList.remove('popup-open');
+  };
+  popup.querySelector('.popup-close').addEventListener('click', closePopup);
+  backdrop.addEventListener('click', closePopup);
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !popup.hidden) closePopup(); });
   popupLink.addEventListener('click', () => {
     ga('whatsapp_click', { contact_method:'whatsapp', location:'popup', destination:'5547988272706' });
     ga('whatsapp_popup_click'); meta('trackCustom', 'WhatsAppClick', { location:'popup' });
   });
 
-  if (!sessionStorage.getItem('ecojoi_whatsapp_popup_seen')) {
-    window.setTimeout(() => {
-      popup.hidden = false; popup.classList.add('is-visible');
-      sessionStorage.setItem('ecojoi_whatsapp_popup_seen', '1'); ga('whatsapp_popup_view');
-    }, 900);
-  }
+  window.setTimeout(() => {
+    backdrop.hidden = false; popup.hidden = false; popup.classList.add('is-visible');
+    document.body.classList.add('popup-open');
+    ga('whatsapp_popup_view'); popup.querySelector('.popup-button').focus();
+  }, 450);
 
 })();
 
