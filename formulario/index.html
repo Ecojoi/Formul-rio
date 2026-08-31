@@ -115,10 +115,11 @@
     <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a12.7 12.7 0 0 0-11 19.1L3.3 28.7l6.8-1.8A12.7 12.7 0 1 0 16 3Zm0 22.9c-2 0-3.9-.6-5.5-1.6l-.4-.2-4 .9 1-3.8-.3-.4A10.2 10.2 0 1 1 16 25.9Zm5.6-7.6c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.2l-1 1.2c-.2.2-.4.2-.7.1-2-.8-3.4-1.8-4.7-4-.4-.7.4-.7 1.1-1.5.1-.2.1-.4 0-.6l-.9-2.2c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9 0 1.7 1.2 3.3 1.4 3.5.2.2 2.5 3.8 6 5.3 2.2.9 3.1 1 4.2.8.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.6-.2-.2-.5-.3-.8-.4Z"/></svg>
   </a>
 
-  <aside id="whatsapp_popup" class="whatsapp-popup" hidden aria-labelledby="popup-title">
+  <div id="whatsapp_backdrop" class="whatsapp-backdrop" hidden></div>
+  <aside id="whatsapp_popup" class="whatsapp-popup" hidden role="dialog" aria-modal="true" aria-labelledby="popup-title" aria-describedby="popup-description">
     <button class="popup-close" type="button" aria-label="Fechar aviso do WhatsApp">×</button>
     <span class="online-dot" aria-hidden="true"></span>
-    <div><p class="popup-kicker">Ecojoi • atendimento</p><h2 id="popup-title">Copos personalizados</h2><p>Peça agora seu orçamento pelo WhatsApp.</p></div>
+    <div><p class="popup-kicker">Ecojoi • atendimento online</p><h2 id="popup-title">Copos personalizados</h2><p id="popup-description">Fale agora com nossa equipe e receba seu orçamento pelo WhatsApp.</p></div>
     <a class="popup-button" href="https://wa.me/5547988272706?text=Ol%C3%A1%20Ecojoi!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">CHAMAR NO WHATSAPP</a>
   </aside>
 
