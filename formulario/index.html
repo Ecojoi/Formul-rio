@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orçamento de Produtos Personalizados | Ecojoi</title>
+  <meta name="description" content="Solicite seu orçamento de produtos personalizados Ecojoi. Preencha seus dados e fale com nossa equipe pelo WhatsApp.">
+  <meta name="theme-color" content="#123f31">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google tag (gtag.js) — exclusivo desta página -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJXLD4DQ46"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HJXLD4DQ46');
+  </script>
+
+  <!-- Meta Pixel Code — exclusivo desta página -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1663439778340769');
+    fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
+</head>
+<body>
+  <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1663439778340769&ev=PageView&noscript=1"></noscript>
+
+  <header class="hero" aria-labelledby="hero-title">
+    <div class="grain" aria-hidden="true"></div>
+    <span class="orb orb-one" aria-hidden="true"></span>
+    <span class="orb orb-two" aria-hidden="true"></span>
+    <svg class="leaf leaf-one" viewBox="0 0 340 520" aria-hidden="true"><path d="M320 13C158 57 54 161 22 310c-16 76 8 147 74 194 44-135 106-253 184-351-58 120-102 238-127 354 99-30 165-102 178-205 10-80 6-177-11-289Z"/></svg>
+    <svg class="leaf leaf-two" viewBox="0 0 340 520" aria-hidden="true"><path d="M320 13C158 57 54 161 22 310c-16 76 8 147 74 194 44-135 106-253 184-351-58 120-102 238-127 354 99-30 165-102 178-205 10-80 6-177-11-289Z"/></svg>
+
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="#top" aria-label="Ecojoi — início">ecojoi<span>.</span></a>
+      <a class="nav-contact" href="#formulario">Pedir orçamento <span aria-hidden="true">↘</span></a>
+    </nav>
+
+    <div class="hero-content container" id="top">
+      <p class="eyebrow">Produtos personalizados • Ecojoi</p>
+      <h1 id="hero-title">SEU PERSONALIZADO<br>FAVORITO <em>ESTÁ AQUI</em></h1>
+      <p class="hero-copy">Personalizados que dão vida à sua marca.</p>
+      <p class="hero-note">Preencha seus dados e receba um orçamento da Ecojoi.</p>
+      <a id="cta_orcamento" class="button button-light" href="#formulario">FAÇA SEU ORÇAMENTO <span aria-hidden="true">↓</span></a>
+    </div>
+    <div class="hero-footer container" aria-hidden="true"><span>Joinville • SC</span><span>Projetos que deixam marca</span></div>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="container intro-grid">
+        <p class="section-tag">Do seu jeito</p>
+        <div>
+          <h2 id="intro-title">Sua ideia ganha<br><em>forma e propósito.</em></h2>
+          <p>Criamos produtos personalizados para ações, equipes e marcas que querem ser lembradas — com cuidado em cada detalhe.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section" id="formulario" aria-labelledby="form-title">
+      <div class="container form-layout">
+        <div class="form-heading">
+          <p class="section-tag section-tag-light">Vamos começar</p>
+          <h2 id="form-title">Conte um pouco<br>sobre o seu <em>projeto.</em></h2>
+          <p>Leva menos de um minuto. Nossa equipe entra em contato para entender os detalhes.</p>
+          <ul class="trust-list" aria-label="Benefícios">
+            <li><span>01</span> Atendimento próximo</li>
+            <li><span>02</span> Soluções sob medida</li>
+            <li><span>03</span> Resposta da nossa equipe</li>
+          </ul>
+        </div>
+
+        <div class="form-card">
+          <form id="form_orcamento" novalidate>
+            <div class="field">
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" type="text" autocomplete="name" minlength="2" required placeholder="Como podemos chamar você?">
+              <small class="error" id="nome-error"></small>
+            </div>
+            <div class="field">
+              <label for="telefone">Telefone / WhatsApp</label>
+              <input id="telefone" name="telefone" type="tel" autocomplete="tel" inputmode="numeric" maxlength="15" required placeholder="(00) 00000-0000" aria-describedby="telefone-error">
+              <small class="error" id="telefone-error"></small>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="quantidade">Quantidade</label>
+                <input id="quantidade" name="quantidade" type="number" inputmode="numeric" min="1" step="1" required placeholder="Ex.: 100">
+                <small class="error" id="quantidade-error"></small>
+              </div>
+              <div class="field">
+                <label for="produto">Produto</label>
+                <select id="produto" name="produto" required>
+                  <option value="">Selecione um produto</option>
+                  <option value="Camisetas">Camisetas</option>
+                  <option value="Ecobags">Ecobags</option>
+                  <option value="Canecas e copos">Canecas e copos</option>
+                  <option value="Brindes corporativos">Brindes corporativos</option>
+                  <option value="Outro">Outro</option>
+                </select>
+                <small class="error" id="produto-error"></small>
+              </div>
+            </div>
+
+            <button class="button button-submit" type="submit">SOLICITAR ORÇAMENTO <span aria-hidden="true">↗</span></button>
+            <p class="lgpd">Ao enviar seus dados, você concorda em ser contatado pela equipe Ecojoi para atendimento da sua solicitação.</p>
+            <p id="form_status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-inner"><a class="brand brand-dark" href="#top">ecojoi<span>.</span></a><p>Personalizados que dão vida à sua marca.</p><small>© <span id="year"></span> Ecojoi</small></div></footer>
+
+  <a id="whatsapp_floating" class="whatsapp-floating" href="https://wa.me/5547988272706?text=Ol%C3%A1%20Ecojoi!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer" aria-label="Falar com a Ecojoi no WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a12.7 12.7 0 0 0-11 19.1L3.3 28.7l6.8-1.8A12.7 12.7 0 1 0 16 3Zm0 22.9c-2 0-3.9-.6-5.5-1.6l-.4-.2-4 .9 1-3.8-.3-.4A10.2 10.2 0 1 1 16 25.9Zm5.6-7.6c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.2l-1 1.2c-.2.2-.4.2-.7.1-2-.8-3.4-1.8-4.7-4-.4-.7.4-.7 1.1-1.5.1-.2.1-.4 0-.6l-.9-2.2c-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 2.9 0 1.7 1.2 3.3 1.4 3.5.2.2 2.5 3.8 6 5.3 2.2.9 3.1 1 4.2.8.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.6-.2-.2-.5-.3-.8-.4Z"/></svg>
+  </a>
+
+  <aside id="whatsapp_popup" class="whatsapp-popup" hidden aria-labelledby="popup-title">
+    <button class="popup-close" type="button" aria-label="Fechar aviso do WhatsApp">×</button>
+    <span class="online-dot" aria-hidden="true"></span>
+    <div><p class="popup-kicker">Equipe Ecojoi</p><h2 id="popup-title">Faça seu orçamento</h2><p>Fale diretamente com nossa equipe pelo WhatsApp.</p></div>
+    <a class="popup-button" href="https://wa.me/5547988272706?text=Ol%C3%A1%20Ecojoi!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">CHAMAR NO WHATSAPP</a>
+  </aside>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
