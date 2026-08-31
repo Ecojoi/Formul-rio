@@ -75,3 +75,7 @@ body.popup-open{overflow:hidden}
 .nav .brand{padding:0;background:transparent;border-radius:0}
 @media(max-width:560px){.nav .brand{padding:0}}
 
+/* Reserva a largura completa da logo branca para não recortar suas laterais. */
+.nav .brand{width:124px;overflow:visible}
+@media(max-width:560px){.nav .brand{width:96px}}
+
