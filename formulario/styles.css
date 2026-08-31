@@ -32,3 +32,18 @@
   .whatsapp-floating{right:24px;bottom:24px}
 }
 
+/* Popup de conversão em primeiro plano. */
+.whatsapp-backdrop{position:fixed;z-index:999;inset:0;background:rgba(3,25,18,.68);backdrop-filter:blur(3px)}
+.whatsapp-backdrop[hidden]{display:none}
+.whatsapp-popup{z-index:1000;left:50%;right:auto;top:50%;bottom:auto;width:min(430px,calc(100vw - 32px));padding:34px;transform:translate(-50%,-50%);border-top:5px solid #25d366;box-shadow:0 28px 100px rgba(0,0,0,.45)}
+.whatsapp-popup.is-visible{animation:modal-in .35s ease both}
+.whatsapp-popup h2{font-size:1.7rem}
+.whatsapp-popup div>p:last-child{font-size:1rem;line-height:1.55;margin:10px 0 22px}
+.popup-button{padding:17px 18px;font-size:.8rem;transition:transform .2s,filter .2s}
+.popup-button:hover{transform:translateY(-2px);filter:brightness(.95)}
+.popup-close{width:40px;height:40px;right:8px;top:8px;border-radius:50%}
+.popup-close:hover{background:#edf1ec}
+body.popup-open{overflow:hidden}
+@keyframes modal-in{from{opacity:0;transform:translate(-50%,-46%) scale(.96)}to{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+@media(max-width:560px){.whatsapp-popup{padding:30px 24px}.whatsapp-popup h2{font-size:1.45rem}}
+
