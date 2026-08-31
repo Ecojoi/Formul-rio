@@ -3,7 +3,7 @@
 @media(max-width:800px){.container{width:min(100% - 32px,680px)}.hero{min-height:700px}.nav{height:86px}.nav-contact{font-size:0}.nav-contact span{font-size:1.2rem}.hero-content{padding-top:84px}.hero h1{font-size:clamp(2.75rem,12.5vw,4.8rem)}.leaf-one{width:270px;right:-65px;opacity:.65}.leaf-two{display:none}.hero-footer span:last-child{display:none}.intro,.form-section{padding:82px 0}.intro-grid,.form-layout{grid-template-columns:1fr}.intro-grid{gap:16px}.form-layout{gap:48px}.field-row{grid-template-columns:1fr;gap:0}.form-card{margin-inline:-4px}.footer-inner{align-items:flex-start;flex-direction:column;gap:10px}.footer-inner small{margin-left:0}.whatsapp-floating{right:16px;bottom:16px;width:56px;height:56px}.whatsapp-popup{right:16px;bottom:84px}.hero-note{max-width:280px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 
-/* Layout curto: toda a captura principal em uma Ãºnica tela no desktop. */
+/* Layout curto: toda a captura principal em uma única tela no desktop. */
 .hero{height:auto;min-height:100svh}
 .hero-content{padding-top:clamp(34px,5vh,62px);padding-bottom:82px}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(360px,.65fr);gap:clamp(36px,6vw,86px);align-items:center}
@@ -21,7 +21,7 @@
 @media(max-width:900px){.hero{min-height:100svh;overflow:visible}.hero-grid{grid-template-columns:1fr}.hero-content{padding-top:56px;padding-bottom:110px}.hero-message{text-align:left}.hero h1{font-size:clamp(2.55rem,11vw,4.5rem)}.hero-form{width:100%;margin:10px 0 0}.hero-footer{position:absolute}.field-row{grid-template-columns:1fr 1.25fr;gap:14px}}
 @media(max-width:560px){.nav{height:76px}.hero-content{padding-top:42px}.hero h1{font-size:clamp(2.3rem,10.5vw,3.4rem)}.hero-copy{margin-top:18px}.hero-form{padding:24px 20px}.field-row{grid-template-columns:1fr}.whatsapp-popup{bottom:78px}.hero-footer{display:none}}
 
-/* SeparaÃ§Ã£o segura entre a copy e o formulÃ¡rio em telas largas. */
+/* Separação segura entre a copy e o formulário em telas largas. */
 @media(min-width:901px){
   .hero>.container{width:min(1400px,calc(100% - 64px))}
   .hero-grid{grid-template-columns:minmax(0,1fr) 390px;gap:clamp(72px,7vw,120px)}
@@ -32,7 +32,7 @@
   .whatsapp-floating{right:24px;bottom:24px}
 }
 
-/* Popup de conversÃ£o em primeiro plano. */
+/* Popup de conversão em primeiro plano. */
 .whatsapp-backdrop{position:fixed;z-index:999;inset:0;background:rgba(3,25,18,.68);backdrop-filter:blur(3px)}
 .whatsapp-backdrop[hidden]{display:none}
 .whatsapp-popup{z-index:1000;left:50%;right:auto;top:50%;bottom:auto;width:min(430px,calc(100vw - 32px));padding:34px;transform:translate(-50%,-50%);border-top:5px solid #25d366;box-shadow:0 28px 100px rgba(0,0,0,.45)}
@@ -66,7 +66,7 @@ body.popup-open{overflow:hidden}
   .whatsapp-popup{width:calc(100% - 28px);max-height:calc(100svh - 28px)}
 }
 
-/* Logo oficial Ecojoi no cabeÃ§alho, sem alterar a estrutura da navegaÃ§Ã£o. */
+/* Logo oficial Ecojoi no cabeçalho, sem alterar a estrutura da navegação. */
 .nav .brand{display:flex;align-items:center;justify-content:center;width:106px;height:92px;padding:5px 7px;background:#f8f8f6;border-radius:2px;overflow:hidden;letter-spacing:normal}
 .nav .brand img{display:block;width:auto;height:80px;object-fit:contain}
 @media(max-width:560px){.nav .brand{width:82px;height:68px;padding:4px 5px}.nav .brand img{height:60px}}
