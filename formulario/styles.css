@@ -47,3 +47,22 @@ body.popup-open{overflow:hidden}
 @keyframes modal-in{from{opacity:0;transform:translate(-50%,-46%) scale(.96)}to{opacity:1;transform:translate(-50%,-50%) scale(1)}}
 @media(max-width:560px){.whatsapp-popup{padding:30px 24px}.whatsapp-popup h2{font-size:1.45rem}}
 
+/* Responsividade final: sem rolagem horizontal em celular e tablet. */
+@media(max-width:900px){
+  .hero{overflow:hidden}
+  .hero-grid{gap:40px}
+  .hero-form,.form-card{width:100%;max-width:680px;margin-inline:0;justify-self:center}
+  .leaf-one{right:-90px}
+  .orb-one{right:-360px}
+  .whatsapp-popup{max-height:calc(100svh - 32px);overflow-y:auto}
+}
+@media(max-width:560px){
+  .container,.hero>.container{width:calc(100% - 28px)}
+  .hero-grid{gap:32px}
+  .hero-content{padding-bottom:82px}
+  .field input,.field select{min-height:50px}
+  .button-submit{min-height:52px}
+  .whatsapp-floating{width:56px;height:56px;right:14px;bottom:14px}
+  .whatsapp-popup{width:calc(100% - 28px);max-height:calc(100svh - 28px)}
+}
+
