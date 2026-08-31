@@ -21,3 +21,14 @@
 @media(max-width:900px){.hero{min-height:100svh;overflow:visible}.hero-grid{grid-template-columns:1fr}.hero-content{padding-top:56px;padding-bottom:110px}.hero-message{text-align:left}.hero h1{font-size:clamp(2.55rem,11vw,4.5rem)}.hero-form{width:100%;margin:10px 0 0}.hero-footer{position:absolute}.field-row{grid-template-columns:1fr 1.25fr;gap:14px}}
 @media(max-width:560px){.nav{height:76px}.hero-content{padding-top:42px}.hero h1{font-size:clamp(2.3rem,10.5vw,3.4rem)}.hero-copy{margin-top:18px}.hero-form{padding:24px 20px}.field-row{grid-template-columns:1fr}.whatsapp-popup{bottom:78px}.hero-footer{display:none}}
 
+/* Separação segura entre a copy e o formulário em telas largas. */
+@media(min-width:901px){
+  .hero>.container{width:min(1400px,calc(100% - 64px))}
+  .hero-grid{grid-template-columns:minmax(0,1fr) 390px;gap:clamp(72px,7vw,120px)}
+  .hero-message{min-width:0;max-width:790px}
+  .hero h1{font-size:clamp(3rem,4.35vw,5.15rem);max-width:790px}
+  .hero-form{width:390px;justify-self:end}
+  .whatsapp-popup{left:24px;right:auto;bottom:24px}
+  .whatsapp-floating{right:24px;bottom:24px}
+}
+
